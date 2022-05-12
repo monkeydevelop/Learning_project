@@ -6,13 +6,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+    <Button
+            android:text="@string/btnCurrent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCurrent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
     <TextView
+            android:text="@string/app_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:id="@+id/txtReslut"
+            app:layout_constraintTop_toBottomOf="@+id/btnCurrent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>
